@@ -1,0 +1,244 @@
+/* making sure there is no space between the elements and the actual border of the webpage */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* gives the page a background color of white */
+body {
+  background-color: #d9dcd6;
+}
+
+/* a blue header at the top */
+.header {
+  padding: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: #2a607c;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* the text that says Horiseon at the top */
+.header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+/* snazzy color transformation effect on the word Horiseon, I suppose */
+.header h1 .seo {
+  color: #d9dcd6;
+}
+
+/* styles the newly-minted nav subsection */
+.header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+}
+
+/* omit the bullets */
+.header nav ul {
+  list-style-type: none;
+}
+
+/* gives the navigation links a clear, readable font size */
+.header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+/* white colored links, added an underline to give more of an indicator that they're clickable */
+a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* made the paragraph text a bit bigger so it's easier to read */
+p {
+  font-size: 23px;
+}
+
+/* main background image */
+.hero img {
+  height: 650px;
+  width: 1024px;
+  margin-bottom: 25px;
+  margin-left: 390px;
+  background-position: center;
+  background-size: cover;
+}
+
+/* floats search engine optimization and social media marketing to the left */
+.float-left {
+  float: left;
+  margin-right: 25px;
+}
+
+/* floats online reputation management to the right */
+.float-right {
+  float: right;
+  margin-left: 25px;
+}
+
+/* arranges the three main sections in descending order; adds appropriate width, margin, and alignment  */
+.content {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 200px;
+  align-items: center;
+}
+
+/* styles the search engine optimization section */
+.search-engine-optimization {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+/* styles the online reputation management section */
+.online-reputation-management {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+}
+
+/* styles the social media marketing section */
+.social-media-marketing {
+  margin-bottom: 20px;
+  padding: 50px;
+  height: 300px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #0072bb;
+  color: #ffffff;
+  background-image: url("assets/images/smm.png");
+}
+
+/* I'm aware these classes and others below are redundant, but I was just not able to figure out how to consolidate them... forgive me */
+/* at least they work */
+.search-engine-optimization img {
+  max-height: 200px;
+}
+
+.online-reputation-management img {
+  max-height: 200px;
+}
+
+.social-media-marketing img {
+  max-height: 200px;
+}
+
+.search-engine-optimization h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.online-reputation-management h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+.social-media-marketing h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+/* moved the benefits to the bottom of the css file, just as they are in the html file and the actual webpage */
+
+/* added flex display so that everything would be lined up horizontally below the other content */
+.benefits {
+  text-align: center;
+  margin-right: 20px;
+  padding: 15px;
+  display: flex;
+  width: 100%;
+  height: 20%;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #2589bd;
+}
+
+/* giving all three of these some space to breathe, and some white text */
+.benefit-lead {
+  margin-bottom: 32px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+.benefit-brand {
+  margin-bottom: 32px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+.benefit-cost {
+  margin-bottom: 32px;
+  margin-right: 5px;
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+/* made the h3s bigger on each benefit section
+did the same with the paragraphs 
+and also centered the text in them so they don't bleed into each other as much */
+.benefit-lead h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.benefit-brand h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.benefit-cost h3 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* giving each benefit section its own relevant image */
+.benefit-lead img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+.benefit-brand img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+.benefit-cost img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+/* the page's footer */
+.footer {
+  padding: 30px;
+  clear: both;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  text-align: center;
+}
+
+/* making the 'Made with (heart emoji) by Horiseon' clearer and easier to read */
+.footer h2 {
+  font-size: 30px;
+}
